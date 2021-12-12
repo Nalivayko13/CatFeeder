@@ -41,7 +41,7 @@ namespace CatFeeder
                 remove_buttons[i].Click += (sender, e) =>
                 {
                     Button _sender = (Button)sender;
-                    Remove_timestamp?.Invoke((string)_sender.Tag);
+                    Remove_timestamp?.Invoke(Convert.ToString(_sender.Tag));
                 };
                 remove_buttons[i].Location = new Point(180, 50 * i);
                 remove_buttons[i].Width = 80;
@@ -58,6 +58,11 @@ namespace CatFeeder
         }
 
 		private void save_btn_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void add_btn_Click(object sender, EventArgs e)
 		{
 
 		}

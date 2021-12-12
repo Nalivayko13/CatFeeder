@@ -64,6 +64,7 @@
 			this.add_btn.TabIndex = 3;
 			this.add_btn.Text = "Add time";
 			this.add_btn.UseVisualStyleBackColor = true;
+			this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
 			// 
 			// timestamps
 			// 

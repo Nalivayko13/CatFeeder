@@ -76,6 +76,7 @@
 			this.feeders.Name = "feeders";
 			this.feeders.Size = new System.Drawing.Size(1064, 378);
 			this.feeders.TabIndex = 8;
+			this.feeders.Paint += new System.Windows.Forms.PaintEventHandler(this.feeders_Paint);
 			// 
 			// home_user
 			// 

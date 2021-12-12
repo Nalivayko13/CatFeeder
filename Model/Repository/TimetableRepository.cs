@@ -178,7 +178,7 @@ namespace Model.Repository
                         {
                             var cells_in = row_in.ItemArray;
                             Time time = new Time("1");
-                            time.Id = (int)cells[0];
+                            time.Id = Convert.ToInt32(cells[0]);
                             time.TimeHMS = cells_in[1].ToString();
                             TimeOfFeed.Add(time);
                         }

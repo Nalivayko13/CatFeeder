@@ -94,5 +94,10 @@ namespace CatFeeder
                 Controls["feeders"].Controls.Add(feeder_names[i]);
             }
         }
-    }
+
+		private void feeders_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }

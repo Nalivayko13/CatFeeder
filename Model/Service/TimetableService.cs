@@ -19,21 +19,30 @@ namespace Model.Service
 
         public void Add_Timetable(string current_user_id)
         {
-            Timetable timetable;
-            string timetable_id;
+            //         Timetable timetable;
+            //         string timetable_id;
 
-            while (true)
-            {
-                timetable_id = RandomString(10);
-                timetable = _timetablerepository.Get(timetable_id);
-                if (timetable == null) break;
-            }
-            
-            timetable = new Timetable();
-            timetable.name = "Расписание uWu";
-            timetable.TimetableId = timetable_id;
-            timetable.UserId = current_user_id;
+            //while (true)
+            //{
+            //	timetable_id = RandomString(10);
+            //	timetable = _timetablerepository.Get(timetable_id);
+            //	if (timetable == null) break;
+            //}
+            //timetable_id = RandomString(10);
+            //         timetable = _timetablerepository.Get(timetable_id);
+
+
+
+
+            //         timetable = new Timetable();
+            //         timetable.name = "Расписание uWu";
+            //         timetable.TimetableId = timetable_id;
+            //         timetable.UserId = current_user_id;
+            //         _timetablerepository.Add(timetable);
+
+            Timetable timetable = new Timetable(current_user_id, "timetable name", RandomString(10));
             _timetablerepository.Add(timetable);
+
         }
 
         public static string RandomString(int length)
