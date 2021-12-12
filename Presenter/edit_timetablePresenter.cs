@@ -21,6 +21,7 @@ namespace Presenter
             _view = view;
             _timetablerepository = timetablerepository;
 
+            _view.Show_goback += Show_goback;
             _view.Remove_timestamp += Remove_timestamp;
         }
 
@@ -35,6 +36,13 @@ namespace Presenter
             _view.Show();
             Timetable timetable = _timetablerepository.Get(timetable_id);
             _view.display_timestamp_list(timetable);
+        }
+
+        private void Show_goback()
+        {
+            var presenter = _kernel.Get<edit_timetablePresenter>();
+           presenter.Run(current_timetable_id);
+            _view.Close();
         }
     }
 }

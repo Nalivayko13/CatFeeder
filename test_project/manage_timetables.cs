@@ -101,5 +101,10 @@ namespace CatFeeder
         {
             Add_timetable?.Invoke();
         }
-    }
+
+		private void timetables_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }

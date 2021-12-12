@@ -15,6 +15,7 @@ namespace CatFeeder
         private readonly ApplicationContext _context;
 
         public event Action<string> Remove_timestamp;
+        public event Action Show_goback;
 
         public edit_timetable(ApplicationContext context)
         {
@@ -66,5 +67,10 @@ namespace CatFeeder
 		{
 
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+            Show_goback?.Invoke();
+        }
 	}
 }
