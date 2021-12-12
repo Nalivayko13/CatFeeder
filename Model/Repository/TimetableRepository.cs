@@ -155,45 +155,48 @@ namespace Model.Repository
         }
         public List<Timetable> GetList(string feeder_id)
         {
-            DataTable table = new DataTable();
-            string command = "feeder_id= '" + feeder_id + "'";
-            table = DataContext.Find("timetable", command);
-            List<Timetable> timetableList = new List<Timetable>();
-            if (table.Rows.Count > 0)
-            {
-                foreach (DataRow row in table.Rows)
-                {
-                    var cells = row.ItemArray;
-                    Timetable timetable = new Timetable();
-                    timetable.TimetableId = cells[0].ToString();
-                    timetable.FeederId = cells[1].ToString();
-                    timetable.name = cells[2].ToString();
+			DataTable table = new DataTable();
+			string command = "feeder_id= '" + feeder_id + "'";
+			table = DataContext.Find("timetable", command);
+			List<Timetable> timetableList = new List<Timetable>();
+			if (table.Rows.Count > 0)
+			{
+				foreach (DataRow row in table.Rows)
+				{
+					var cells = row.ItemArray;
+					Timetable timetable = new Timetable();
+					timetable.TimetableId = cells[0].ToString();
+					timetable.FeederId = cells[1].ToString();
+					timetable.name = cells[2].ToString();
+					timetable.time = cells[3].ToString();
 
-                    //
-                    string com = "timetable_id= '" + timetable.TimetableId + "'";
-                    DataTable table_in = new DataTable();
-                    table_in = DataContext.Find("timestamps", com);
-                    List<Time> TimeOfFeed = new List<Time>();
-                    if (table_in.Rows.Count > 0)
-                    {
-                        foreach (DataRow row_in in table_in.Rows)
-                        {
-                            var cells_in = row_in.ItemArray;
-                            Time time = new Time("1");
-                            time.Id = Convert.ToInt32(cells[0]);
-                            time.TimeHMS = cells_in[1].ToString();
-                            TimeOfFeed.Add(time);
-                        }
-                    }
-                    else timetable.TimeOfFeed = null;
-                    timetable.TimeOfFeed = TimeOfFeed;
-                    timetableList.Add(timetable);
-                }
-            }
-            else return null;
 
-            return timetableList;
+					string com = "timetable_id= '" + timetable.TimetableId + "'";
+					DataTable table_in = new DataTable();
+					table_in = DataContext.Find("timestamps", com);
+					List<Time> TimeOfFeed = new List<Time>();
+					if (table_in.Rows.Count > 0)
+					{
+						foreach (DataRow row_in in table_in.Rows)
+						{
+							var cells_in = row_in.ItemArray;
+							Time time = new Time("1");
+							time.Id = Convert.ToInt32(cells[0]);
+							time.TimeHMS = cells_in[1].ToString();
+							TimeOfFeed.Add(time);
+						}
+					}
+					else timetable.TimeOfFeed = null;
+					timetable.TimeOfFeed = TimeOfFeed;
+					timetableList.Add(timetable);
+				}
+			}
+			else return null;
+
+			return timetableList;
         }
+
+      
 
         public List<Timetable> GetAll(string id)
         {

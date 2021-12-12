@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_feeder));
 			this.add_feeder_txtbx = new System.Windows.Forms.TextBox();
 			this.add_feeder_btn = new System.Windows.Forms.Button();
 			this.back_btn = new System.Windows.Forms.Button();
@@ -57,7 +58,7 @@
 			// 
 			// back_btn
 			// 
-			this.back_btn.Location = new System.Drawing.Point(13, 495);
+			this.back_btn.Location = new System.Drawing.Point(36, 476);
 			this.back_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.back_btn.Name = "back_btn";
 			this.back_btn.Size = new System.Drawing.Size(118, 36);
@@ -86,6 +87,7 @@
 			this.Controls.Add(this.back_btn);
 			this.Controls.Add(this.add_feeder_btn);
 			this.Controls.Add(this.add_feeder_txtbx);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "add_feeder";
 			this.Text = "add_feeder";

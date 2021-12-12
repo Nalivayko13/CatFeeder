@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(feeder_logs));
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +48,7 @@
 			this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
 			this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(41, 54);
-			this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
 			this.tableLayoutPanel1.RowCount = 2;
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.21645F));
@@ -89,7 +90,7 @@
 			// back_btn
 			// 
 			this.back_btn.Location = new System.Drawing.Point(45, 482);
-			this.back_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.back_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.back_btn.Name = "back_btn";
 			this.back_btn.Size = new System.Drawing.Size(118, 36);
 			this.back_btn.TabIndex = 1;
@@ -99,11 +100,11 @@
 			// export_btn
 			// 
 			this.export_btn.Location = new System.Drawing.Point(818, 482);
-			this.export_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.export_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.export_btn.Name = "export_btn";
 			this.export_btn.Size = new System.Drawing.Size(118, 36);
 			this.export_btn.TabIndex = 2;
-			this.export_btn.Text = "Экспорт";
+			this.export_btn.Text = "Export";
 			this.export_btn.UseVisualStyleBackColor = true;
 			this.export_btn.Click += new System.EventHandler(this.export_btn_Click);
 			// 
@@ -111,11 +112,12 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(778, 544);
+			this.ClientSize = new System.Drawing.Size(978, 544);
 			this.Controls.Add(this.export_btn);
 			this.Controls.Add(this.back_btn);
 			this.Controls.Add(this.tableLayoutPanel1);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "feeder_logs";
 			this.Text = "feeder_logs";
 			this.tableLayoutPanel1.ResumeLayout(false);

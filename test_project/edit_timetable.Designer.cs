@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(edit_timetable));
 			this.cancel_btn = new System.Windows.Forms.Button();
 			this.save_btn = new System.Windows.Forms.Button();
 			this.add_btn = new System.Windows.Forms.Button();
@@ -48,10 +49,10 @@
 			// 
 			// save_btn
 			// 
-			this.save_btn.Location = new System.Drawing.Point(825, 490);
+			this.save_btn.Location = new System.Drawing.Point(776, 473);
 			this.save_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.save_btn.Name = "save_btn";
-			this.save_btn.Size = new System.Drawing.Size(118, 36);
+			this.save_btn.Size = new System.Drawing.Size(120, 36);
 			this.save_btn.TabIndex = 2;
 			this.save_btn.Text = "Save";
 			this.save_btn.UseVisualStyleBackColor = true;
@@ -59,10 +60,10 @@
 			// 
 			// add_btn
 			// 
-			this.add_btn.Location = new System.Drawing.Point(51, 490);
+			this.add_btn.Location = new System.Drawing.Point(94, 473);
 			this.add_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.add_btn.Name = "add_btn";
-			this.add_btn.Size = new System.Drawing.Size(209, 36);
+			this.add_btn.Size = new System.Drawing.Size(150, 36);
 			this.add_btn.TabIndex = 3;
 			this.add_btn.Text = "Add time";
 			this.add_btn.UseVisualStyleBackColor = true;
@@ -71,10 +72,10 @@
 			// timestamps
 			// 
 			this.timestamps.AutoScroll = true;
-			this.timestamps.Location = new System.Drawing.Point(51, 51);
+			this.timestamps.Location = new System.Drawing.Point(94, 31);
 			this.timestamps.Margin = new System.Windows.Forms.Padding(4);
 			this.timestamps.Name = "timestamps";
-			this.timestamps.Size = new System.Drawing.Size(1081, 399);
+			this.timestamps.Size = new System.Drawing.Size(800, 399);
 			this.timestamps.TabIndex = 4;
 			// 
 			// button1
@@ -90,10 +91,10 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(291, 490);
+			this.button2.Location = new System.Drawing.Point(291, 473);
 			this.button2.Margin = new System.Windows.Forms.Padding(4);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(209, 36);
+			this.button2.Size = new System.Drawing.Size(150, 36);
 			this.button2.TabIndex = 6;
 			this.button2.Text = "Remove time";
 			this.button2.UseVisualStyleBackColor = true;
@@ -103,13 +104,14 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1178, 544);
+			this.ClientSize = new System.Drawing.Size(978, 544);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.timestamps);
 			this.Controls.Add(this.add_btn);
 			this.Controls.Add(this.save_btn);
 			this.Controls.Add(this.cancel_btn);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "edit_timetable";
 			this.Text = "edit_timetable";

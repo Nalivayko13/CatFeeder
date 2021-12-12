@@ -41,8 +41,9 @@
 			// 
 			// login_btn
 			// 
-			this.login_btn.Location = new System.Drawing.Point(515, 347);
-			this.login_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.login_btn.ForeColor = System.Drawing.SystemColors.InfoText;
+			this.login_btn.Location = new System.Drawing.Point(555, 347);
+			this.login_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.login_btn.Name = "login_btn";
 			this.login_btn.Size = new System.Drawing.Size(118, 36);
 			this.login_btn.TabIndex = 1;
@@ -53,7 +54,7 @@
 			// username_txtbx
 			// 
 			this.username_txtbx.Location = new System.Drawing.Point(515, 135);
-			this.username_txtbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.username_txtbx.Margin = new System.Windows.Forms.Padding(4);
 			this.username_txtbx.Name = "username_txtbx";
 			this.username_txtbx.Size = new System.Drawing.Size(228, 31);
 			this.username_txtbx.TabIndex = 2;
@@ -61,7 +62,7 @@
 			// password_txtbx
 			// 
 			this.password_txtbx.Location = new System.Drawing.Point(515, 229);
-			this.password_txtbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.password_txtbx.Margin = new System.Windows.Forms.Padding(4);
 			this.password_txtbx.Name = "password_txtbx";
 			this.password_txtbx.PasswordChar = '*';
 			this.password_txtbx.Size = new System.Drawing.Size(228, 31);
@@ -72,6 +73,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
 			this.label1.Location = new System.Drawing.Point(397, 141);
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
@@ -82,6 +84,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
+			this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
 			this.label2.Location = new System.Drawing.Point(401, 235);
 			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
@@ -91,8 +94,9 @@
 			// 
 			// no_account_btn
 			// 
+			this.no_account_btn.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
 			this.no_account_btn.Location = new System.Drawing.Point(141, 450);
-			this.no_account_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.no_account_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.no_account_btn.Name = "no_account_btn";
 			this.no_account_btn.Size = new System.Drawing.Size(165, 36);
 			this.no_account_btn.TabIndex = 5;
@@ -124,7 +128,7 @@
 			this.Controls.Add(this.login_btn);
 			this.ForeColor = System.Drawing.SystemColors.WindowFrame;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "Form1";
 			this.RightToLeftLayout = true;
 			this.Text = "login";

@@ -68,5 +68,15 @@ namespace CatFeeder
 		{
 
 		}
+
+		private void confirm_password_txtbx_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void pictureBox1_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

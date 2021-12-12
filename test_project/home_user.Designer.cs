@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home_user));
 			this.add_feeder_btn = new System.Windows.Forms.Button();
 			this.manage_timetables_btn = new System.Windows.Forms.Button();
 			this.quit_btn = new System.Windows.Forms.Button();
@@ -74,7 +75,7 @@
 			this.feeders.Location = new System.Drawing.Point(42, 49);
 			this.feeders.Margin = new System.Windows.Forms.Padding(4);
 			this.feeders.Name = "feeders";
-			this.feeders.Size = new System.Drawing.Size(1064, 378);
+			this.feeders.Size = new System.Drawing.Size(900, 378);
 			this.feeders.TabIndex = 8;
 			this.feeders.Paint += new System.Windows.Forms.PaintEventHandler(this.feeders_Paint);
 			// 
@@ -82,11 +83,12 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1178, 544);
+			this.ClientSize = new System.Drawing.Size(978, 544);
 			this.Controls.Add(this.feeders);
 			this.Controls.Add(this.quit_btn);
 			this.Controls.Add(this.manage_timetables_btn);
 			this.Controls.Add(this.add_feeder_btn);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "home_user";
 			this.Text = "Home";

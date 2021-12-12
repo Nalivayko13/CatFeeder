@@ -37,8 +37,10 @@ namespace CatFeeder
         public void display_timetable_list(List<Timetable> timetablelist)
         {
             if (timetablelist == null) return;
+          
             int size = timetablelist.Count;
-            
+           // MessageBox.Show(Convert.ToString(size));
+
             int i;
             List<Button> export_buttons = new List<Button>();
             List<Button> remove_buttons = new List<Button>();
@@ -51,7 +53,8 @@ namespace CatFeeder
                 timetable_names[i].Location = new Point(50, 50 * i);
                 timetable_names[i].Width = 100;
                 timetable_names[i].Visible = true;
-                timetable_names[i].Text = timetablelist[i].name;
+                // timetable_names[i].Text = timetablelist[i].name;
+                timetable_names[i].Text = "hello";
                 Controls["timetables"].Controls.Add(timetable_names[i]);
 
                 export_buttons.Add(new Button());
@@ -103,6 +106,36 @@ namespace CatFeeder
         }
 
 		private void timetables_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button5_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button6_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button4_Click(object sender, EventArgs e)
 		{
 
 		}

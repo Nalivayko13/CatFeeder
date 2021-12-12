@@ -31,5 +31,10 @@ namespace CatFeederView
         {
 
         }
-    }
+
+		private void registration_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

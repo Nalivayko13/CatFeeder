@@ -92,5 +92,10 @@ namespace test_project
 		{
             Show_time_update?.Invoke(textBox1.Text);
         }
-    }
+
+		private void pictureBox1_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

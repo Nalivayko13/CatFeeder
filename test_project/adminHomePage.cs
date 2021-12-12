@@ -35,5 +35,10 @@ namespace test_project
         {
             Show_feeder_id_list?.Invoke();
         }
-    }
+
+		private void label4_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
