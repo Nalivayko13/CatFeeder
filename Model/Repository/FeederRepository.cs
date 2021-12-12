@@ -97,7 +97,7 @@ namespace Model.Repository
                     feeder.User_id = cells[1].ToString();
                     feeder.Feeder_id = cells[0].ToString();
                     feeder.Timetable_id = cells[2].ToString();
-               //     feeder.Name = cells[3].ToString();
+                    feeder.Name = cells[3].ToString();
                     feederList.Add(feeder);
                 }
             }

@@ -60,7 +60,7 @@ namespace CatFeeder
             for (i = 0; i < size; i++)
             {
                 info_buttons.Add(new Button());
-                info_buttons[i].Tag = feederlist[i].Feeder_id;
+                info_buttons[i].Tag = "FeederID: " + feederlist[i].Feeder_id + "\nTime: it's time to feed cat";
                 info_buttons[i].Click += (sender, e) =>
                 {
                     Button _sender = (Button)sender;
@@ -69,7 +69,7 @@ namespace CatFeeder
                 info_buttons[i].Location = new Point(200, 50*i);
                 info_buttons[i].Width = 140;
                 info_buttons[i].Visible = true;
-                info_buttons[i].Text = "Информация";
+                info_buttons[i].Text = "Info";
                 Controls["feeders"].Controls.Add(info_buttons[i]);
 
                 settings_buttons.Add(new Button());
@@ -83,7 +83,7 @@ namespace CatFeeder
                 settings_buttons[i].Location = new Point( 400, 50 * i);
                 settings_buttons[i].Width = 140;
                 settings_buttons[i].Visible = true;
-                settings_buttons[i].Text = "Настройки";
+                settings_buttons[i].Text = "Settings";
                 Controls["feeders"].Controls.Add(settings_buttons[i]);
 
                 feeder_names.Add(new Label());

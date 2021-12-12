@@ -64,7 +64,7 @@ namespace CatFeeder
                 export_buttons[i].Location = new Point(180, 50 * i);
                 export_buttons[i].Width = 80;
                 export_buttons[i].Visible = true;
-                export_buttons[i].Text = "Экспорт";
+                export_buttons[i].Text = "Export";
                 Controls["timetables"].Controls.Add(export_buttons[i]);
 
                 edit_buttons.Add(new Button());
@@ -77,7 +77,7 @@ namespace CatFeeder
                 edit_buttons[i].Location = new Point(280, 50 * i);
                 edit_buttons[i].Width = 80;
                 edit_buttons[i].Visible = true;
-                edit_buttons[i].Text = "Изменить";
+                edit_buttons[i].Text = "Edit";
                 Controls["timetables"].Controls.Add(edit_buttons[i]);
 
                 remove_buttons.Add(new Button());
@@ -90,7 +90,7 @@ namespace CatFeeder
                 remove_buttons[i].Location = new Point(380, 50 * i);
                 remove_buttons[i].Width = 80;
                 remove_buttons[i].Visible = true;
-                remove_buttons[i].Text = "Удалить";
+                remove_buttons[i].Text = "Remove";
                 Controls["timetables"].Controls.Add(remove_buttons[i]);
 
 

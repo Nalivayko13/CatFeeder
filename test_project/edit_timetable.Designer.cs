@@ -32,6 +32,8 @@
 			this.save_btn = new System.Windows.Forms.Button();
 			this.add_btn = new System.Windows.Forms.Button();
 			this.timestamps = new System.Windows.Forms.Panel();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// cancel_btn
@@ -51,7 +53,7 @@
 			this.save_btn.Name = "save_btn";
 			this.save_btn.Size = new System.Drawing.Size(118, 36);
 			this.save_btn.TabIndex = 2;
-			this.save_btn.Text = "Сохранить";
+			this.save_btn.Text = "Save";
 			this.save_btn.UseVisualStyleBackColor = true;
 			this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
 			// 
@@ -75,11 +77,33 @@
 			this.timestamps.Size = new System.Drawing.Size(1081, 399);
 			this.timestamps.TabIndex = 4;
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(984, 490);
+			this.button1.Margin = new System.Windows.Forms.Padding(4);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(118, 36);
+			this.button1.TabIndex = 5;
+			this.button1.Text = "Go back";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(291, 490);
+			this.button2.Margin = new System.Windows.Forms.Padding(4);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(209, 36);
+			this.button2.TabIndex = 6;
+			this.button2.Text = "Remove time";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
 			// edit_timetable
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1178, 544);
+			this.Controls.Add(this.button2);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.timestamps);
 			this.Controls.Add(this.add_btn);
 			this.Controls.Add(this.save_btn);
@@ -97,5 +121,7 @@
         private System.Windows.Forms.Button save_btn;
         private System.Windows.Forms.Button add_btn;
         private System.Windows.Forms.Panel timestamps;
-    }
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button button2;
+	}
 }

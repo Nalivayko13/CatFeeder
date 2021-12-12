@@ -35,5 +35,10 @@ namespace CatFeeder
         {
             Show_feeder_id_list?.Invoke();
         }
-    }
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

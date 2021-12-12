@@ -72,17 +72,18 @@
 			// button1
 			// 
 			this.button1.Location = new System.Drawing.Point(480, 56);
-			this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.button1.Margin = new System.Windows.Forms.Padding(4);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(165, 36);
 			this.button1.TabIndex = 3;
 			this.button1.Text = "Info";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// Manage_feeder_ids_btn
 			// 
 			this.Manage_feeder_ids_btn.Location = new System.Drawing.Point(13, 391);
-			this.Manage_feeder_ids_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Manage_feeder_ids_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.Manage_feeder_ids_btn.Name = "Manage_feeder_ids_btn";
 			this.Manage_feeder_ids_btn.Size = new System.Drawing.Size(160, 36);
 			this.Manage_feeder_ids_btn.TabIndex = 4;
@@ -93,7 +94,7 @@
 			// User_list_btn
 			// 
 			this.User_list_btn.Location = new System.Drawing.Point(288, 391);
-			this.User_list_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.User_list_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.User_list_btn.Name = "User_list_btn";
 			this.User_list_btn.Size = new System.Drawing.Size(160, 36);
 			this.User_list_btn.TabIndex = 5;
@@ -103,7 +104,7 @@
 			// Stats_btn
 			// 
 			this.Stats_btn.Location = new System.Drawing.Point(551, 391);
-			this.Stats_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Stats_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.Stats_btn.Name = "Stats_btn";
 			this.Stats_btn.Size = new System.Drawing.Size(160, 36);
 			this.Stats_btn.TabIndex = 6;
@@ -113,7 +114,7 @@
 			// Logout_btn
 			// 
 			this.Logout_btn.Location = new System.Drawing.Point(13, 495);
-			this.Logout_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Logout_btn.Margin = new System.Windows.Forms.Padding(4);
 			this.Logout_btn.Name = "Logout_btn";
 			this.Logout_btn.Size = new System.Drawing.Size(118, 36);
 			this.Logout_btn.TabIndex = 7;
@@ -145,7 +146,7 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "home_admin";
 			this.Text = "home_admin";
 			this.Load += new System.EventHandler(this.home_admin_Load);
