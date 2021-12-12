@@ -15,6 +15,7 @@ namespace Presenter
         public List<Feeder> feederlist;
 
         private string current_user_id;
+        private string current_time;
 
         public home_userPresenter(IKernel kernel, Ihome_user view, IRepository<Feeder> feederrepository)
         {
@@ -32,9 +33,10 @@ namespace Presenter
         private void Show_feeder_settings(string feeder_id)
         {
             var presenter = _kernel.Get<edit_feederPresenter>();
-            presenter.Run(current_user_id, feeder_id);
+            presenter.Run(current_user_id, feeder_id, current_time);
             _view.Close();
         }
+
 
         private void Show_feeder_info(string feeder_id)
         {

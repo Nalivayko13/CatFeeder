@@ -12,8 +12,12 @@ namespace Presenter
         private readonly IKernel _kernel;
         private Iedit_timetable _view;
         private IRepository<Timetable> _timetablerepository;
+        private ITimetableService _timetableservice;
 
         private string current_timetable_id;
+        private string current_feeder_id;
+        private string current_time;
+
 
         public edit_timetablePresenter(IKernel kernel, Iedit_timetable view, IRepository<Timetable> timetablerepository)
         {
@@ -23,6 +27,7 @@ namespace Presenter
 
             _view.Show_goback += Show_goback;
             _view.Remove_timestamp += Remove_timestamp;
+ 
         }
 
         private void Remove_timestamp(string obj)
@@ -43,6 +48,12 @@ namespace Presenter
             var presenter = _kernel.Get<edit_timetablePresenter>();
            presenter.Run(current_timetable_id);
             _view.Close();
+        }
+
+        private void Show_time_update(string timetable)
+        {
+            
+
         }
     }
 }

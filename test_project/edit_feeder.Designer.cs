@@ -36,6 +36,7 @@
 			this.save_btn = new System.Windows.Forms.Button();
 			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
 			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// feeder_name_txtbx
@@ -86,7 +87,7 @@
 			this.save_btn.Name = "save_btn";
 			this.save_btn.Size = new System.Drawing.Size(118, 36);
 			this.save_btn.TabIndex = 5;
-			this.save_btn.Text = "Save";
+			this.save_btn.Text = "Save name";
 			this.save_btn.UseVisualStyleBackColor = true;
 			this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
 			// 
@@ -103,12 +104,24 @@
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(155, 31);
 			this.textBox1.TabIndex = 6;
+			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(612, 498);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(112, 34);
+			this.button1.TabIndex = 7;
+			this.button1.Text = "Save time";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// edit_feeder
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1000, 562);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.save_btn);
 			this.Controls.Add(this.back_btn);
@@ -133,5 +146,6 @@
         private System.Windows.Forms.Button save_btn;
 		private System.Windows.Forms.ImageList imageList1;
 		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.Button button1;
 	}
 }

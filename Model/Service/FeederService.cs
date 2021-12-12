@@ -61,13 +61,13 @@ namespace Model.Service
         public short Update_feeder(string feeder_id, string feeder_name) 
         {
 
-            //if (feeder_name == "")
-            //    return 0;
-            //else
-            //{
+			if (feeder_name == "")
+				return 0;
+			//else
+			//{
 
-                 //Feeder feeder = _feederrepository.Get(feeder_id);
-               Feeder feeder = new Feeder(feeder_id, feeder_name);
+			//Feeder feeder = _feederrepository.Get(feeder_id);
+			Feeder feeder = new Feeder(feeder_id, feeder_name);
 
                
                     feeder.Name = feeder_name;
@@ -78,6 +78,7 @@ namespace Model.Service
 
             //}
         }
+
 
     }
 }

@@ -39,8 +39,7 @@ namespace Model.Service
             //         timetable.TimetableId = timetable_id;
             //         timetable.UserId = current_user_id;
             //         _timetablerepository.Add(timetable);
-
-            Timetable timetable = new Timetable(current_user_id, "timetable name", RandomString(10));
+            Timetable timetable = new Timetable(current_user_id, "timetable name", RandomString(10),"9:00" );
             _timetablerepository.Add(timetable);
 
         }
@@ -50,5 +49,21 @@ namespace Model.Service
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
         }
+
+        public short Update_feeder_time(string current_feeder_id, string timetable)
+        {
+
+            if (timetable == "")
+                return 0;
+
+            Timetable new_timetable = new Timetable(current_feeder_id,"name_time",RandomString(5),timetable);
+            //string cond = "feeder_id = '" + current_feeder_id + "';";
+            _timetablerepository.Add(new_timetable);
+            return 1;
+
+
+     
+        }
+
     }
 }

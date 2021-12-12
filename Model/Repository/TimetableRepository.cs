@@ -14,11 +14,12 @@ namespace Model.Repository
 
         public int Add(Timetable obj)
         {
-            string UserId = obj.UserId;
+            string FeederId = obj.FeederId;
             string TimetableId = obj.TimetableId;
             string name = obj.name;
+            string time = obj.time;
             List<Time> TimeOfFeed = obj.TimeOfFeed;
-            string com = "('" + TimetableId + "', '" + UserId + "', '" + name + "')";
+            string com = "('" + TimetableId + "', '" + FeederId + "', '" + name+"', '" + time + "')";
             if (TimeOfFeed != null)
             {
                 foreach (Time t in TimeOfFeed)
@@ -49,12 +50,13 @@ namespace Model.Repository
         }
         public void Update(Timetable obj, string cond)
         {
-            string UserId = obj.UserId;
+            string FeederId = obj.FeederId;
             string TimetableId = obj.TimetableId;
             string name = obj.name;
+            string time = obj.time;
             List<Time> TimeOfFeed = obj.TimeOfFeed;
-            string com = "timetable_id = '" + TimetableId + "', user_id = '" + UserId + "', timetable_name = '"
-                + name + "'";
+            string com = "timetable_id = '" + TimetableId + "', feeder_id = '" + FeederId + "', timetable_name = '"
+                + name + "', time = '"+time+"'";
             DataContext.Update("timetable", com, cond);
              
             string com_2 = "timetable_id = '" + TimetableId + "'";
@@ -87,7 +89,7 @@ namespace Model.Repository
                 {
                     var cells = row.ItemArray;
                     timetable.TimetableId = cells[0].ToString();
-                    timetable.UserId = cells[1].ToString();
+                    timetable.FeederId = cells[1].ToString();
                     timetable.name = cells[2].ToString();
                 }
             }
@@ -123,7 +125,7 @@ namespace Model.Repository
                     var cells = row.ItemArray;
                     Timetable timetable = new Timetable();
                     timetable.TimetableId = cells[0].ToString();
-                    timetable.UserId = cells[1].ToString();
+                    timetable.FeederId = cells[1].ToString();
                     timetable.name = cells[2].ToString();
 
                     //
@@ -151,10 +153,10 @@ namespace Model.Repository
  
             return timetableList;
         }
-        public List<Timetable> GetList(string user_id)
+        public List<Timetable> GetList(string feeder_id)
         {
             DataTable table = new DataTable();
-            string command = "user_id= '" + user_id + "'";
+            string command = "feeder_id= '" + feeder_id + "'";
             table = DataContext.Find("timetable", command);
             List<Timetable> timetableList = new List<Timetable>();
             if (table.Rows.Count > 0)
@@ -164,7 +166,7 @@ namespace Model.Repository
                     var cells = row.ItemArray;
                     Timetable timetable = new Timetable();
                     timetable.TimetableId = cells[0].ToString();
-                    timetable.UserId = cells[1].ToString();
+                    timetable.FeederId = cells[1].ToString();
                     timetable.name = cells[2].ToString();
 
                     //
