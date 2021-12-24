@@ -21,3 +21,5 @@
 
 
 <img width="1184" alt="Снимок экрана 2021-12-24 в 23 00 54" src="https://user-images.githubusercontent.com/67878260/147370970-fc5de59f-20fb-413c-8f02-b4558c1ac618.png">
+
+<img width="1228" alt="Снимок экрана 2021-12-24 в 23 05 50" src="https://user-images.githubusercontent.com/67878260/147371076-384ede40-50f7-41b9-8639-2e1d047dce33.png">
