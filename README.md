@@ -20,12 +20,13 @@
 
 
 <img width="835" alt="Снимок экрана 2021-12-24 в 22 59 53" src="https://user-images.githubusercontent.com/67878260/147370953-69f37dac-6c09-4a11-beea-08c57348d1ec.png">
-(логин и регистрация)
+(Логин и регистрация)
 <img width="678" alt="Снимок экрана 2021-12-24 в 23 00 40" src="https://user-images.githubusercontent.com/67878260/147370964-dc96c96f-5de4-42cf-8aa9-73fc7e622af5.png">
 
-
+(Изменение параметров кормушки)
 <img width="1184" alt="Снимок экрана 2021-12-24 в 23 00 54" src="https://user-images.githubusercontent.com/67878260/147370970-fc5de59f-20fb-413c-8f02-b4558c1ac618.png">
 
+(Добавление кормушки) 
 <img width="1228" alt="Снимок экрана 2021-12-24 в 23 05 50" src="https://user-images.githubusercontent.com/67878260/147371076-384ede40-50f7-41b9-8639-2e1d047dce33.png">
 
 
