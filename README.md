@@ -20,7 +20,7 @@
 
 
 <img width="835" alt="Снимок экрана 2021-12-24 в 22 59 53" src="https://user-images.githubusercontent.com/67878260/147370953-69f37dac-6c09-4a11-beea-08c57348d1ec.png">
-
+(логин и регистрация)
 <img width="678" alt="Снимок экрана 2021-12-24 в 23 00 40" src="https://user-images.githubusercontent.com/67878260/147370964-dc96c96f-5de4-42cf-8aa9-73fc7e622af5.png">
 
 
