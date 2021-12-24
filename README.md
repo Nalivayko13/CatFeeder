@@ -10,3 +10,11 @@
 
 
 <img width="750" alt="Снимок экрана 2021-12-24 в 21 09 40" src="https://user-images.githubusercontent.com/67878260/147368264-5051fb6c-4d7e-4e30-94df-a5b84b969d36.png">
+
+
+![log reg](https://user-images.githubusercontent.com/67878260/147370880-16eca75b-a3b7-4b83-8bf1-407a0eb3c35a.png)
+
+
+![v1](https://user-images.githubusercontent.com/67878260/147370881-a5f3d52b-c822-4c8c-89bb-db5eda3bb289.png)
+
+
